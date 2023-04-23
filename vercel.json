@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path((?!api/|static/).*)",
+      "destination": "/api/:path*",
+      "permanent": true
+    }
+  ]
+}

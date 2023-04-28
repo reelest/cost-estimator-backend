@@ -51,7 +51,7 @@ y = data[
         "estimatedSteelNeeded",
     ]
 ]
-model = RandomForestRegressor(random_state=0, max_depth=7)
+model = RandomForestRegressor(random_state=0, max_depth=5)
 model.fit(X, y)
 
 save_model_pickle(model, f"{os.path.dirname(__file__)}/model.pickle")
